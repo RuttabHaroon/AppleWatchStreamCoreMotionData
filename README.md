@@ -13,7 +13,7 @@ python main.app
 
 
 ## From Apple Watch side
-1. Follow the steps in the video titled "" to see how to run the app. You will only need to do this once to install the app on your apple watch. After it is successfully installed just tap on the app to run it. 
+1. Follow the steps in the video titled "ios_app.mp4" to see how to run the app. You will only need to do this once to install the app on your apple watch. After it is successfully installed just tap on the app to run it. 
 
 
 ## Updating motion data capture frequency
