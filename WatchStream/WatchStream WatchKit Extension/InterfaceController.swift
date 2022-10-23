@@ -46,6 +46,7 @@ class InterfaceController: WKInterfaceController {
         stopButton.setHidden(false)
         stopButton.setEnabled(true)
         
+        MySocketManager.shared.connectToUDP("172.20.10.2", 20001)
         MotionDatafetcher.shared.startFetch()
     }
     

@@ -51,7 +51,7 @@ class MotionDatafetcher {
                 values["Gyroscope Z"] = String(gData.rotationRate.z)
             }
             
-            RealtimeDBHelper.shared.update(values: values)
+
         }
     }
     

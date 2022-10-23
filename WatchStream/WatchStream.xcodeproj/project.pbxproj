@@ -23,6 +23,7 @@
 		FB869B73287DAEA900D03D49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB869B72287DAEA900D03D49 /* GoogleService-Info.plist */; };
 		FB869B74287DAEA900D03D49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB869B72287DAEA900D03D49 /* GoogleService-Info.plist */; };
 		FB869B75287DAEA900D03D49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB869B72287DAEA900D03D49 /* GoogleService-Info.plist */; };
+		FBAF520328ACD4600057D98C /* MySocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF520228ACD4600057D98C /* MySocketManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		FB869B62287DAC7800D03D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB869B64287DAC7800D03D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB869B72287DAEA900D03D49 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FBAF520228ACD4600057D98C /* MySocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySocketManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				FB764A51287DB2C300F387E7 /* MotionDatafetcher.swift */,
 				FB764A4D287DB18A00F387E7 /* WatchStream-Bridging-Header.h */,
 				FB764A4E287DB18A00F387E7 /* WatchStream WatchKit App-Bridging-Header.h */,
+				FBAF520228ACD4600057D98C /* MySocketManager.swift */,
 			);
 			path = "WatchStream WatchKit Extension";
 			sourceTree = "<group>";
@@ -241,7 +244,6 @@
 				FB869B53287DAC7700D03D49 /* Sources */,
 				FB869B54287DAC7700D03D49 /* Frameworks */,
 				FB869B55287DAC7700D03D49 /* Resources */,
-				CAB97C3F960B0CE9C0965B97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -370,23 +372,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CAB97C3F960B0CE9C0965B97 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WatchStream WatchKit Extension/Pods-WatchStream WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WatchStream WatchKit Extension/Pods-WatchStream WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchStream WatchKit Extension/Pods-WatchStream WatchKit Extension-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F904856A3803FE9CD7413319 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -418,6 +403,7 @@
 			files = (
 				FB764A52287DB2C300F387E7 /* MotionDatafetcher.swift in Sources */,
 				FB869B5F287DAC7700D03D49 /* ExtensionDelegate.swift in Sources */,
+				FBAF520328ACD4600057D98C /* MySocketManager.swift in Sources */,
 				FB869B5D287DAC7700D03D49 /* InterfaceController.swift in Sources */,
 				FB764A50287DB18B00F387E7 /* RealtimeDBHelper.swift in Sources */,
 				FB869B61287DAC7700D03D49 /* ComplicationController.swift in Sources */,
@@ -574,7 +560,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W324VVUUCT;
+				DEVELOPMENT_TEAM = 9D7A84P2AM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WatchStream WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchStream WatchKit Extension";
@@ -606,7 +592,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W324VVUUCT;
+				DEVELOPMENT_TEAM = 9D7A84P2AM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WatchStream WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchStream WatchKit Extension";
@@ -641,7 +627,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W324VVUUCT;
+				DEVELOPMENT_TEAM = 9D7A84P2AM;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchStream_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchStream WatchKit App";
@@ -675,7 +661,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W324VVUUCT;
+				DEVELOPMENT_TEAM = 9D7A84P2AM;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchStream_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchStream WatchKit App";
@@ -705,7 +691,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W324VVUUCT;
+				DEVELOPMENT_TEAM = 9D7A84P2AM;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -727,7 +713,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W324VVUUCT;
+				DEVELOPMENT_TEAM = 9D7A84P2AM;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
